@@ -589,7 +589,7 @@ $formMain_Load={
 	#create repo column with check box
 	$repocolumn = New-Object System.Data.DataColumn;
 	$repocolumn.DataType = [System.Type]::GetType("System.Boolean");
-	$repocolumn.ColumnName = "Add to Repo";
+	$repocolumn.ColumnName = "Add";
 	$newmodeltable.Columns.Add($repocolumn);
 	
 	#create driver column with check box
@@ -660,23 +660,24 @@ $txtboxAddModel_TextChanged={
 	
 	$model = $txtboxAddModel.Text
 	$newmodeltable.Rows.Clear();
+	
 	try
 	{
-		$modelexists = Get-HPDeviceDetails -name *$model* -ErrorAction STOP
+		$platformmodelexists = Get-HPDeviceDetails -name *$model*
 		
-		foreach ($device in $modelexists)
+		foreach ($modelname in $platformmodelexists)
 		{
-			$platname = $device.systemid
-			$modelname = $device.name
-			$lblAddPlatformNotFound.Text = "Model found"
+			$platname = $modelname.systemid
+			$modelname = $modelname.name
+			$lblAddPlatformNotFound.Text = "Platform found"
 			$lblAddPlatformNotFound.ForeColor = 'Green'
-			$newmodeltable.Rows.Add("$platname", "$modelname", $true)
+			$newmodeltable.Rows.Add("$platname", "$modelname", $true, $true, $true, $true)
 		}
 		
 	}
 	catch
 	{
-		$lblAddPlatformNotFound.Text = "Model not found"
+		$lblAddPlatformNotFound.Text = "Platform not found"
 		$lblAddPlatformNotFound.ForeColor = "Red"
 	}
 	
@@ -712,13 +713,15 @@ $buttonAddtoRepo_Click={
 			$catarray += "Addons"
 		}
 		
-		$osver = $comboboxWinVer.SelectedItem
-		Set-Location -Path $repositorypath
-		$platform = $pc | Select-Object -ExpandProperty Platform
-		Add-RepositoryFilter -Platform $platform -os "win10" -OsVer $osver -Category $catarray
-		$newmodeltable.Rows.Clear();
-		$txtboxAddModel.Text = ""
-		Add-Logs "$platform added to repo..."
+		if (($pc.add) -eq $true)
+		{
+			$osver = $comboboxWinVer.SelectedItem
+			Set-Location -Path $repositorypath
+			$platform = $pc | Select-Object -ExpandProperty Platform
+			Add-RepositoryFilter -Platform $platform -os "win10" -OsVer $osver -Category $catarray
+			Add-Logs "$platform added to repo..."
+		}
+		
 		
 		$formMain.Close()
 		
@@ -726,11 +729,6 @@ $buttonAddtoRepo_Click={
 
 }
 ]]></Code>
-  <Bookmarks />
-  <BreakPoints>
-    <Line Disabled="False">436</Line>
-  </BreakPoints>
-  <TracePoints />
-  <Mode>0</Mode>
+  <Mode>1</Mode>
   <Assemblies />
 </File>
