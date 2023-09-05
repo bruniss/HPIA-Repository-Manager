@@ -1,7 +1,7 @@
 # HPIA-Repository-Manager
 Creates and manages driver repositories for use by HPIA
 
-**To install** download the .msi file from packages. The program will install to c:\program files (x86)\hpia driver repository management
+**to install** download the .msi file from packages. The program will install to c:\program files (x86)\hpia driver repository management
 A shortcut will be placed on your desktop. this program should be launched by a user with read/write permission to the directory you intend on installing your repository at. on first launch you will see this screen:
 
 ![image](https://github.com/johnsonsr3243/HPIA-Repository-Manager/assets/120566210/22a4c9e3-ada8-4f3e-9cad-0a8585c16460)
