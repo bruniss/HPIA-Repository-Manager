@@ -1,5 +1,6 @@
 # HPIA-Repository-Manager
-Creates and manages driver repositories for use by HPIA
+creates and manages driver repositories for use by HPIA. heavily inspired by this similar tool at: https://github.com/ofelman/HPIA-Repository-Downloader/tree/master
+using lots of functions and other snippets written by the team at hp who created cmsl, the previously listed github, and gary blok. info for gary is here: https://garytown.com/
 
 **to install** download the .msi file from packages. The program will install to c:\program files (x86)\hpia driver repository management
 A shortcut will be placed on your desktop. this program should be launched by a user with read/write permission to the directory you intend on installing your repository at. on first launch you will see this screen:
