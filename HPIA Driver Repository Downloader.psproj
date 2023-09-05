@@ -1,0 +1,17 @@
+﻿<Project Synchronized="False" SyncFilter="*.ps1;*.psm1;*.psd1;*.ps1xml;*.psf;*.pss;*.xml;*.help.txt">
+  <Version>2.1</Version>
+  <FileID>c9eb0de2-1649-4ae9-83c8-8fbc29b784d6</FileID>
+  <ProjectType>0</ProjectType>
+  <RememberPowerShellVersion>True</RememberPowerShellVersion>
+  <PowerShellVersion>Local Machine - PowerShell V5 (64 Bit)</PowerShellVersion>
+  <Folders />
+  <Files>
+    <File Build="0">Startup.pss</File>
+    <File Build="0" ReferenceFunction="Show-MainForm_psf">MainForm.psf</File>
+    <File Build="0" Shared="True" ReferenceFunction="Invoke-Global_ps1">Globals.ps1</File>
+    <File Build="0" ReferenceFunction="Show-fromsccm_psf">fromsccm.psf</File>
+    <File Build="0" ReferenceFunction="Show-AddModel_psf">AddModel.psf</File>
+    <File Build="0" ReferenceFunction="Show-help_psf">help.psf</File>
+    <File Build="0" ReferenceFunction="Show-hpia_command_psf">hpia command.psf</File>
+  </Files>
+</Project>

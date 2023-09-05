@@ -1,0 +1,14 @@
+﻿<ProjectState>
+  <Version>1.0</Version>
+  <FileID>c9eb0de2-1649-4ae9-83c8-8fbc29b784d6</FileID>
+  <OpenFolders />
+  <OpenFiles>
+    <File>Startup.pss</File>
+    <File>Globals.ps1</File>
+    <File>MainForm.psf</File>
+    <File>AddModel.psf</File>
+    <File>fromsccm.psf</File>
+    <File>help.psf</File>
+    <File>hpia command.psf</File>
+  </OpenFiles>
+</ProjectState>
