@@ -11,7 +11,6 @@
     <File Build="0" Shared="True" ReferenceFunction="Invoke-Global_ps1">Globals.ps1</File>
     <File Build="0" ReferenceFunction="Show-fromsccm_psf">fromsccm.psf</File>
     <File Build="0" ReferenceFunction="Show-AddModel_psf">AddModel.psf</File>
-    <File Build="0" ReferenceFunction="Show-help_psf">help.psf</File>
     <File Build="0" ReferenceFunction="Show-hpia_command_psf">hpia command.psf</File>
   </Files>
 </Project>
