@@ -1,6 +1,6 @@
 # HPIA-Repository-Manager
 
-creates and manages driver repositories for use by HPIA. using lots of functions and other snippets written by the team at hp who created cmsl, the previously listed github, and gary blok. also using some snippets and general design ideas from this similar tool:
+creates and manages driver repositories for use by HPIA. using lots of functions and other snippets written by the team at hp who created cmsl, and gary blok in addition to using some snippets and general design ideas from this similar tool:
 https://github.com/ofelman/HPIA-Repository-Downloader/tree/master
 
 info for hp cmsl is here: 
