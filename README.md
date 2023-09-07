@@ -20,9 +20,10 @@ A shortcut will be placed on your desktop. this program should be launched by a 
 
 <img width="504" alt="add models" src="https://github.com/fumbling-code/HPIA-Repository-Manager/assets/120566210/44a5b525-3606-47b2-9dd1-5ea0c6d9c2da">
 
-**to add all models from sccm namespace** click "import from sccm", fill in the fields, hit load, and hit add to repo. note the big red text
+**to add all models from sccm namespace** click "import from sccm", fill in the fields, hit load, and hit add to repo. note the big red text. this will take a while to run and the form will freeze.
 
-<img width="590" alt="add from sccm" src="https://github.com/fumbling-code/HPIA-Repository-Manager/assets/120566210/efc6dbce-e0aa-471a-bb7d-717740da4ed7">
+<img width="590" alt="cmresults" src="https://github.com/fumbling-code/HPIA-Repository-Manager/assets/120566210/4db3472c-1288-4412-815e-4eb5b62a40bf">
+
 
 **to start downloading or updating repository** once you have added whatever filters you want, click 'sync' to start a repository sync. you will see some console text in the textbox, but during this time the form will mostly be frozen and unable to be interacted with. the console will indicate when the sync has ended. logs are located in the .repository folder under 'activity'.
 
